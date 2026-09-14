@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver - Backtracking Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sudoku Solver</h1>
+            <p>Backtracking Algorithm Visualization</p>
+        </header>
+
+        <main>
+            <div id="sudoku-board"></div>
+            
+            <div class="controls">
+                <button id="load-btn" class="btn">Load Sample</button>
+                <button id="solve-instantly-btn" class="btn primary">Solve Instantly</button>
+                <button id="visualize-btn" class="btn secondary">Visualize Solving</button>
+                <button id="reset-btn" class="btn danger">Reset Board</button>
+            </div>
+
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>Status</h3>
+                    <p id="status-text">Waiting for input...</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Execution Time</h3>
+                    <p id="time-text">0 ms</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Recursive Calls</h3>
+                    <p id="calls-text">0</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
